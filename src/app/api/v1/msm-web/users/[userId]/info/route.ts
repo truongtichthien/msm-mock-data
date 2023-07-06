@@ -9,9 +9,10 @@ async function getUsersInfo() {
   return JSON.parse(res);
 }
 
-export async function GET(request: Request, { params }: { params: { userId: string } }) {
+export async function GET(request: Request, options: any) {
   const usersInfo = await getUsersInfo();
-  const { userId } = params;
+  console.log(options);
+  const { userId } = options.params;
 
   const info = usersInfo[userId] ?? usersInfo['default'];
   return NextResponse.json(info, { status: 200 });
