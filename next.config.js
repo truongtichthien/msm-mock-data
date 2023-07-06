@@ -22,7 +22,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://api.example.com/:path*',
+        destination: 'http://local.iskra.world:3000/:path*',
       },
     ];
   },
