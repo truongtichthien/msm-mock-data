@@ -18,14 +18,6 @@ const nextConfig = {
       },
     ];
   },
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: 'http://local.iskra.world:3000/:path*',
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
