@@ -1,0 +1,112 @@
+{
+  "1357284c-671e-44c6-9b24-c19697729a70": {
+    "isk": {
+      "amount": 100
+    },
+    "sbt": {
+      "amount": 10
+    },
+    "sbg": {
+      "amount": 10
+    },
+    "explorationTicket": {
+      "amount": 13,
+      "availToClaim": 1
+    },
+    "card": {
+      "statistic": {
+        "level1": {
+          "amount": 32230,
+          "canMerge": true
+        },
+        "level2": {
+          "amount": 12930,
+          "canMerge": false
+        },
+        "level3": {
+          "amount": 12930,
+          "canMerge": false
+        }
+      },
+      "items": {
+        "level3": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            {
+              "id": 1263,
+              "level": 3,
+              "color": "Silver",
+              "strength": "7/10",
+              "attack": "9/10",
+              "defense": "8/10",
+              "traits": "Sword,Fly"
+            }
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    }
+  },
+  "default": {
+    "isk": {
+      "amount": 100
+    },
+    "sbt": {
+      "amount": 10
+    },
+    "sbg": {
+      "amount": 10
+    },
+    "explorationTicket": {
+      "amount": 13,
+      "availToClaim": 1
+    },
+    "card": {
+      "statistic": {
+        "level1": {
+          "amount": 32230,
+          "canMerge": true
+        },
+        "level2": {
+          "amount": 12930,
+          "canMerge": false
+        },
+        "level3": {
+          "amount": 12930,
+          "canMerge": false
+        }
+      },
+      "items": {
+        "level3": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+            {
+              "id": 1263,
+              "level": 3,
+              "color": "Silver",
+              "strength": "7/10",
+              "attack": "9/10",
+              "defense": "8/10",
+              "traits": "Sword,Fly"
+            }
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      }
+    }
+  }
+}

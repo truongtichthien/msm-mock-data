@@ -1,0 +1,16 @@
+{
+  "1357284c-671e-44c6-9b24-c19697729a70": {
+    "userId": "1357284c-671e-44c6-9b24-c19697729a70",
+    "name": "Test",
+    "email": "test.t@iskra.world",
+    "iskraTier": "Bronze",
+    "wallet": "0xfF5a87E2184eF304de651C361b68623231403019"
+  },
+  "default": {
+    "userId": "68c7327f-f6c2-4a9c-9e6d-e636109c702d",
+    "name": "Eugene",
+    "email": "eugene.eee@iskra.world",
+    "iskraTier": "Dia",
+    "wallet": "0xfF5a87E2184eF304de651C361b68623231403019"
+  }
+}
