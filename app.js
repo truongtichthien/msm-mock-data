@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const fs = require('fs');
+const path = require('path');
 
 /**  */
 const app = express();
@@ -15,7 +16,7 @@ app.use(cookieParser());
 
 app.use('/api/v1/msm-web/users/:id/info', function (req, res) {
   const paramId = req.params.id;
-  fs.readFile('./src/app/db/users/info.json', 'utf8', (err, data) => {
+  fs.readFile(path.join(__dirname, '/src/app/db/users/info.json'), 'utf8', (err, data) => {
     if (err) {
       res.status(401).json({ userId: paramId, execution: false });
       return;
@@ -29,7 +30,7 @@ app.use('/api/v1/msm-web/users/:id/info', function (req, res) {
 app.use('/api/v1/msm-web/users/:id/balance', function (req, res) {
   const paramId = req.params.id;
   const queryFor = req.query.for;
-  fs.readFile(`./src/app/db/users/balance/${queryFor}.json`, 'utf8', (err, data) => {
+  fs.readFile(path.join(__dirname, `/src/app/db/users/balance/${queryFor}.json`), 'utf8', (err, data) => {
     if (err) {
       res.status(401).json({ userId: paramId, execution: false });
       return;
