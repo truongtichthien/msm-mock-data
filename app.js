@@ -9,7 +9,7 @@ const path = require('path');
 const app = express();
 
 // define root directory for resources
-app.use(cors());
+app.use(cors({ origin: '*', credentials: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
