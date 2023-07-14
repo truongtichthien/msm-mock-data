@@ -10,10 +10,23 @@ async function getUsersInfo() {
 }
 
 export async function GET(request: Request, options: any) {
-  const usersInfo = await getUsersInfo();
-  console.log(options);
-  const { userId } = options.params;
+  // const usersInfo = await getUsersInfo();
+  // console.log(options);
+  // const { userId } = options.params;
+  // const info = usersInfo[userId] ?? usersInfo['default'];
 
-  const info = usersInfo[userId] ?? usersInfo['default'];
-  return NextResponse.json(info, { status: 200 });
+  return NextResponse.json({ abc: 123 });
+}
+
+export async function POST(request: Request, options: any) {}
+
+export async function PUT(request: Request, options: any) {}
+
+export async function DELETE(request: Request, options: any) {}
+
+export async function PATCH(request: Request, options: any) {}
+
+// it is a must implementation to serve CORS APIs
+export async function OPTIONS() {
+  return NextResponse.json({});
 }
