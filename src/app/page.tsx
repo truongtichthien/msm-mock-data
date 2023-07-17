@@ -25,10 +25,6 @@ export default async function Home() {
       ) : (
         <h2 className="subtitle">You are NOT connected to MongoDB.</h2>
       )}
-
-      {menu?.map((e, i) => {
-        return <div key={i}>{JSON.stringify(e)}</div>;
-      })}
     </main>
   );
 }
