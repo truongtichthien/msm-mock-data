@@ -39,7 +39,7 @@ export async function POST(request: NextRequest, options: any) {
   }
 
   const res: GeneralResponseProps = {
-    oper: 'EXPLORATION_TICKET_CLAIMING',
+    oper: 'MONSTER_EXPLORING',
     isSuccess,
     msg,
     code: !isSuccess ? 'ITEMS_INSUFFICIENT' : !applyPass ? 'EXPLORATION_PASS_NOT_APPLIED' : undefined,

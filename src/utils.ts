@@ -34,11 +34,11 @@ export async function writeTickets(userId: string, newAmount: number): Promise<T
   return newRes;
 }
 
-export function generateCard(): CardProps {
+export function generateCard(grade?: number): CardProps {
   const colorCode: number = randomInt(0, 9);
   return {
     id: randomInt(1234, 4567),
-    level: randomInt(0, 3),
+    level: grade || randomInt(0, 3),
     color: {
       code: colorCode,
       label: COLORS_NAME[colorCode],

@@ -1140,8 +1140,8 @@
             "id": 1263,
             "level": 3,
             "color": {
-              "code": "silver",
-              "label": "Silver"
+              "code": 8,
+              "label": "silver"
             },
             "strength": {
               "max": 10,
@@ -1588,7 +1588,32 @@
             ]
           }
         ],
-        [],
+        [
+          {
+            "id": 1263,
+            "level": 3,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
         [
           {
             "id": 4296,

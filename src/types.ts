@@ -53,21 +53,23 @@ export type GeneralResponseProps = {
   isSuccess: boolean;
   msg: string | null;
   code?: string;
-  data: ExplorationTicketProps | null;
+  data: ExplorationTicketProps | CardsResponseProps | { card: CardProps } | null;
 };
 
 export type CardsDatabaseProps = { [key: string]: CardsLevelProps };
 
 export type CardsResponseProps = {
-  result: {
+  result?: {
     exploredAmount: number;
     unExploredAmount: number;
   };
-  explorationTicket: {
+  explorationTicket?: {
     amount: number;
     availToClaim: number;
   };
-  card: {
-    exploredItems: Array<CardProps>;
-  };
+  card:
+    | {
+        exploredItems: Array<CardProps>;
+      }
+    | CardProps;
 };

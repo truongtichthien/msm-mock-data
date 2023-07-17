@@ -108,7 +108,37 @@ export async function exploreCards(userId: string, exploreAmount: number, pass: 
       projection: { _id: 0 },
     });
 
-  return [cards, res.value];
+  return [newCards, res.value];
+}
+
+export async function mergeCards(userId: string, grade: number) {
+  const db: Db = await connectDb();
+  const { cards }: CardsCollectionProps = (await db.collection('cards').findOne()) as CardsCollectionProps;
+
+  // create merged card
+  const mergedCard: CardProps = generateCard(grade + 1);
+  const {
+    level,
+    color: { code },
+  } = mergedCard;
+
+  // remove merging cards
+  cards[grade] = cards[grade].map((color) => {
+    color.shift();
+    return color;
+  });
+
+  // add merged card
+  cards[level][code].push(mergedCard);
+
+  const res = await db
+    .collection('cards')
+    .findOneAndUpdate({ userId: { $in: [userId, DEFAULT_USER_ID] } }, [{ $set: { cards } }], {
+      returnDocument: 'after',
+      projection: { _id: 0 },
+    });
+
+  return [mergedCard, res.value];
 }
 
 export default clientPromise;
