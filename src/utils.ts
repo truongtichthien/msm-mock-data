@@ -5,7 +5,6 @@ import type { TicketProps, ExplorationTicketProps, TicketDatabaseProps, GeneralR
 export async function readDb<T>(fileName: string): Promise<T> {
   const dataFilePath = path.join(process.cwd(), `src/db/${fileName}.json`);
   const res = await fsPromises.readFile(dataFilePath, 'utf-8');
-  console.log(JSON.parse(res));
   return JSON.parse(res);
 }
 
