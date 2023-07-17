@@ -1,14 +1,9 @@
-import type { WithId, Document } from 'mongodb';
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
-import type { CardProps, CardsResponseProps, GeneralResponseProps } from '@msm/types';
+import type { CardsResponseProps, GeneralResponseProps } from '@msm/types';
 import { randomInt } from '@msm/utils';
-import { exploreCards, consumeTickets } from '@msm/mongodb';
-
-export interface CardsCollectionProps extends WithId<Document> {
-  userId: string;
-  cards: Array<Array<Array<CardProps>>>;
-}
+import { consumeTickets } from '@msm/factory/tickets';
+import { exploreCards } from '@msm/factory/cards';
 
 export async function POST(request: NextRequest, options: any) {
   let data: null | CardsResponseProps = null;
@@ -19,8 +14,8 @@ export async function POST(request: NextRequest, options: any) {
 
   if (isSuccess) {
     const { userId } = options.params;
-    const [cards] = (await exploreCards(userId, amount, applyPass)) as [CardProps[], CardsCollectionProps];
-    const tickets = await consumeTickets(userId, amount);
+    const cards = exploreCards(userId, amount, applyPass);
+    const tickets = consumeTickets(userId, amount);
 
     msg = null;
     data = {

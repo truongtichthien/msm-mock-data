@@ -1,1 +1,1645 @@
-{"default":[[[{"id":1251,"level":0,"color":{"code":0,"label":"magenta"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":8},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]},{"id":2639,"level":0,"color":{"code":0,"label":"magenta"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":8},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]},{"id":2386,"level":0,"color":{"code":0,"label":"magenta"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":7},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]}],[],[{"id":2791,"level":0,"color":{"code":2,"label":"yellow"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":10},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]},{"id":3172,"level":0,"color":{"code":2,"label":"yellow"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":6},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]}],[{"id":1558,"level":0,"color":{"code":3,"label":"green"},"strength":{"max":10,"value":7},"attack":{"max":10,"value":7},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]}],[{"id":4547,"level":0,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":5},"defense":{"max":10,"value":9},"traits":["Sword","Fly"]},{"id":1616,"level":0,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":7},"defense":{"max":10,"value":9},"traits":["Sword","Fly"]},{"id":1710,"level":0,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":5},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]}],[],[{"id":3909,"level":0,"color":{"code":6,"label":"blue"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":5},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]},{"id":3639,"level":0,"color":{"code":6,"label":"blue"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":7},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]}],[{"id":3434,"level":0,"color":{"code":7,"label":"purpil"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":7},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]}],[{"id":3365,"level":0,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":6},"defense":{"max":10,"value":9},"traits":["Sword","Fly"]},{"id":1438,"level":0,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":6},"defense":{"max":10,"value":9},"traits":["Sword","Fly"]},{"id":3088,"level":0,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":5},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]},{"id":2068,"level":0,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":6},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]}],[{"id":3940,"level":0,"color":{"code":9,"label":"black"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":9},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]}]],[[],[],[{"id":1996,"level":1,"color":{"code":2,"label":"yellow"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":8},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]},{"id":2320,"level":1,"color":{"code":2,"label":"yellow"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":5},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]},{"id":3328,"level":1,"color":{"code":2,"label":"yellow"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":8},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]}],[{"id":4136,"level":1,"color":{"code":3,"label":"green"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":9},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]}],[],[{"id":1908,"level":1,"color":{"code":5,"label":"skyblue"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":6},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]}],[{"id":4320,"level":1,"color":{"code":6,"label":"blue"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":5},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]},{"id":2895,"level":1,"color":{"code":6,"label":"blue"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":10},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]}],[{"id":3800,"level":1,"color":{"code":7,"label":"purpil"},"strength":{"max":10,"value":7},"attack":{"max":10,"value":6},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]},{"id":4364,"level":1,"color":{"code":7,"label":"purpil"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":7},"defense":{"max":10,"value":9},"traits":["Sword","Fly"]},{"id":3147,"level":1,"color":{"code":7,"label":"purpil"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":9},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]},{"id":4402,"level":1,"color":{"code":7,"label":"purpil"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":6},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]}],[{"id":1867,"level":1,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":7},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]},{"id":1820,"level":1,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":7},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]}],[{"id":1923,"level":1,"color":{"code":9,"label":"black"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":6},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]},{"id":2280,"level":1,"color":{"code":9,"label":"black"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":6},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]},{"id":4516,"level":1,"color":{"code":9,"label":"black"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":6},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]},{"id":3236,"level":1,"color":{"code":9,"label":"black"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":5},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]}]],[[],[{"id":2566,"level":2,"color":{"code":1,"label":"orange"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":6},"defense":{"max":10,"value":9},"traits":["Sword","Fly"]}],[],[],[{"id":1814,"level":2,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":8},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]},{"id":1635,"level":2,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":7},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]},{"id":1651,"level":2,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":7},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]},{"id":2370,"level":2,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":8},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]}],[{"id":1237,"level":2,"color":{"code":5,"label":"skyblue"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":8},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]},{"id":3200,"level":2,"color":{"code":5,"label":"skyblue"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":7},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]}],[{"id":1395,"level":2,"color":{"code":6,"label":"blue"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":7},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]},{"id":2815,"level":2,"color":{"code":6,"label":"blue"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":9},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]}],[{"id":1389,"level":2,"color":{"code":7,"label":"purpil"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":10},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]},{"id":4067,"level":2,"color":{"code":7,"label":"purpil"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":5},"defense":{"max":10,"value":9},"traits":["Sword","Fly"]}],[{"id":1263,"level":3,"color":{"code":"silver","label":"Silver"},"strength":{"max":10,"value":7},"attack":{"max":10,"value":9},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]},{"id":2848,"level":2,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":5},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]},{"id":3723,"level":2,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":7},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]},{"id":1502,"level":2,"color":{"code":8,"label":"silver"},"strength":{"max":10,"value":7},"attack":{"max":10,"value":9},"defense":{"max":10,"value":6},"traits":["Sword","Fly"]}],[]],[[{"id":3695,"level":3,"color":{"code":0,"label":"magenta"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":7},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]},{"id":3896,"level":3,"color":{"code":0,"label":"magenta"},"strength":{"max":10,"value":8},"attack":{"max":10,"value":6},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]}],[{"id":3196,"level":3,"color":{"code":1,"label":"orange"},"strength":{"max":10,"value":7},"attack":{"max":10,"value":6},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]}],[{"id":4053,"level":3,"color":{"code":2,"label":"yellow"},"strength":{"max":10,"value":7},"attack":{"max":10,"value":5},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]},{"id":2853,"level":3,"color":{"code":2,"label":"yellow"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":10},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]}],[{"id":3222,"level":3,"color":{"code":3,"label":"green"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":7},"defense":{"max":10,"value":9},"traits":["Sword","Fly"]}],[{"id":4124,"level":3,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":8},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]},{"id":1304,"level":3,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":5},"attack":{"max":10,"value":9},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]},{"id":3075,"level":3,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":5},"defense":{"max":10,"value":10},"traits":["Sword","Fly"]},{"id":4379,"level":3,"color":{"code":4,"label":"tiffany"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":10},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]}],[{"id":2161,"level":3,"color":{"code":5,"label":"skyblue"},"strength":{"max":10,"value":6},"attack":{"max":10,"value":9},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]}],[{"id":1256,"level":3,"color":{"code":6,"label":"blue"},"strength":{"max":10,"value":10},"attack":{"max":10,"value":6},"defense":{"max":10,"value":8},"traits":["Sword","Fly"]},{"id":3576,"level":3,"color":{"code":6,"label":"blue"},"strength":{"max":10,"value":7},"attack":{"max":10,"value":6},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]}],[{"id":2068,"level":3,"color":{"code":7,"label":"purpil"},"strength":{"max":10,"value":7},"attack":{"max":10,"value":5},"defense":{"max":10,"value":5},"traits":["Sword","Fly"]}],[],[{"id":4296,"level":3,"color":{"code":9,"label":"black"},"strength":{"max":10,"value":9},"attack":{"max":10,"value":10},"defense":{"max":10,"value":7},"traits":["Sword","Fly"]}]],[[],[],[],[],[],[],[],[],[],[]],[[],[],[],[],[],[],[],[],[],[]]]}
+[
+  {
+    "userId": "68c7327f-f6c2-4a9c-9e6d-e636109c702d",
+    "cards": [
+      [
+        [
+          {
+            "id": 1251,
+            "level": 0,
+            "color": {
+              "code": 0,
+              "label": "magenta"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 8
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2639,
+            "level": 0,
+            "color": {
+              "code": 0,
+              "label": "magenta"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 8
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2386,
+            "level": 0,
+            "color": {
+              "code": 0,
+              "label": "magenta"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [],
+        [
+          {
+            "id": 2791,
+            "level": 0,
+            "color": {
+              "code": 2,
+              "label": "yellow"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 10
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3172,
+            "level": 0,
+            "color": {
+              "code": 2,
+              "label": "yellow"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 1558,
+            "level": 0,
+            "color": {
+              "code": 3,
+              "label": "green"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 4547,
+            "level": 0,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 9
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 1616,
+            "level": 0,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 9
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 1710,
+            "level": 0,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [],
+        [
+          {
+            "id": 3909,
+            "level": 0,
+            "color": {
+              "code": 6,
+              "label": "blue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3639,
+            "level": 0,
+            "color": {
+              "code": 6,
+              "label": "blue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 3434,
+            "level": 0,
+            "color": {
+              "code": 7,
+              "label": "purpil"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 3365,
+            "level": 0,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 9
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 1438,
+            "level": 0,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 9
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3088,
+            "level": 0,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2068,
+            "level": 0,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 3940,
+            "level": 0,
+            "color": {
+              "code": 9,
+              "label": "black"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ]
+      ],
+      [
+        [],
+        [],
+        [
+          {
+            "id": 1996,
+            "level": 1,
+            "color": {
+              "code": 2,
+              "label": "yellow"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 8
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2320,
+            "level": 1,
+            "color": {
+              "code": 2,
+              "label": "yellow"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3328,
+            "level": 1,
+            "color": {
+              "code": 2,
+              "label": "yellow"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 8
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 4136,
+            "level": 1,
+            "color": {
+              "code": 3,
+              "label": "green"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [],
+        [
+          {
+            "id": 1908,
+            "level": 1,
+            "color": {
+              "code": 5,
+              "label": "skyblue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 4320,
+            "level": 1,
+            "color": {
+              "code": 6,
+              "label": "blue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2895,
+            "level": 1,
+            "color": {
+              "code": 6,
+              "label": "blue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 10
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 3800,
+            "level": 1,
+            "color": {
+              "code": 7,
+              "label": "purpil"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 4364,
+            "level": 1,
+            "color": {
+              "code": 7,
+              "label": "purpil"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 9
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3147,
+            "level": 1,
+            "color": {
+              "code": 7,
+              "label": "purpil"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 4402,
+            "level": 1,
+            "color": {
+              "code": 7,
+              "label": "purpil"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 1867,
+            "level": 1,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 1820,
+            "level": 1,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 1923,
+            "level": 1,
+            "color": {
+              "code": 9,
+              "label": "black"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2280,
+            "level": 1,
+            "color": {
+              "code": 9,
+              "label": "black"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 4516,
+            "level": 1,
+            "color": {
+              "code": 9,
+              "label": "black"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3236,
+            "level": 1,
+            "color": {
+              "code": 9,
+              "label": "black"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ]
+      ],
+      [
+        [],
+        [
+          {
+            "id": 2566,
+            "level": 2,
+            "color": {
+              "code": 1,
+              "label": "orange"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 9
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [],
+        [],
+        [
+          {
+            "id": 1814,
+            "level": 2,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 8
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 1635,
+            "level": 2,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 1651,
+            "level": 2,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2370,
+            "level": 2,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 8
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 1237,
+            "level": 2,
+            "color": {
+              "code": 5,
+              "label": "skyblue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 8
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3200,
+            "level": 2,
+            "color": {
+              "code": 5,
+              "label": "skyblue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 1395,
+            "level": 2,
+            "color": {
+              "code": 6,
+              "label": "blue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2815,
+            "level": 2,
+            "color": {
+              "code": 6,
+              "label": "blue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 1389,
+            "level": 2,
+            "color": {
+              "code": 7,
+              "label": "purpil"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 10
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 4067,
+            "level": 2,
+            "color": {
+              "code": 7,
+              "label": "purpil"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 9
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 1263,
+            "level": 3,
+            "color": {
+              "code": "silver",
+              "label": "Silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2848,
+            "level": 2,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3723,
+            "level": 2,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 1502,
+            "level": 2,
+            "color": {
+              "code": 8,
+              "label": "silver"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 6
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        []
+      ],
+      [
+        [
+          {
+            "id": 3695,
+            "level": 3,
+            "color": {
+              "code": 0,
+              "label": "magenta"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3896,
+            "level": 3,
+            "color": {
+              "code": 0,
+              "label": "magenta"
+            },
+            "strength": {
+              "max": 10,
+              "value": 8
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 3196,
+            "level": 3,
+            "color": {
+              "code": 1,
+              "label": "orange"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 4053,
+            "level": 3,
+            "color": {
+              "code": 2,
+              "label": "yellow"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 2853,
+            "level": 3,
+            "color": {
+              "code": 2,
+              "label": "yellow"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 10
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 3222,
+            "level": 3,
+            "color": {
+              "code": 3,
+              "label": "green"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 7
+            },
+            "defense": {
+              "max": 10,
+              "value": 9
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 4124,
+            "level": 3,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 8
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 1304,
+            "level": 3,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 5
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3075,
+            "level": 3,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 10
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 4379,
+            "level": 3,
+            "color": {
+              "code": 4,
+              "label": "tiffany"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 10
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 2161,
+            "level": 3,
+            "color": {
+              "code": 5,
+              "label": "skyblue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 6
+            },
+            "attack": {
+              "max": 10,
+              "value": 9
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 1256,
+            "level": 3,
+            "color": {
+              "code": 6,
+              "label": "blue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 10
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 8
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          },
+          {
+            "id": 3576,
+            "level": 3,
+            "color": {
+              "code": 6,
+              "label": "blue"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 6
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [
+          {
+            "id": 2068,
+            "level": 3,
+            "color": {
+              "code": 7,
+              "label": "purpil"
+            },
+            "strength": {
+              "max": 10,
+              "value": 7
+            },
+            "attack": {
+              "max": 10,
+              "value": 5
+            },
+            "defense": {
+              "max": 10,
+              "value": 5
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ],
+        [],
+        [
+          {
+            "id": 4296,
+            "level": 3,
+            "color": {
+              "code": 9,
+              "label": "black"
+            },
+            "strength": {
+              "max": 10,
+              "value": 9
+            },
+            "attack": {
+              "max": 10,
+              "value": 10
+            },
+            "defense": {
+              "max": 10,
+              "value": 7
+            },
+            "traits": [
+              "Sword",
+              "Fly"
+            ]
+          }
+        ]
+      ],
+      [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 import type { Db } from 'mongodb';
-import { MongoClient, Int32 } from 'mongodb';
+import { MongoClient } from 'mongodb';
 import { DEFAULT_USER_ID } from './constants';
-import type { CardsCollectionProps, CardsLevelProps, CardProps } from './types';
+import type { CardsCollectionProps, CardProps } from './types';
 import { generateCard } from './utils';
 
 if (!process.env.MONGODB_URI) {
@@ -11,8 +11,24 @@ if (!process.env.MONGODB_URI) {
 const uri = process.env.MONGODB_URI;
 const options = {};
 
-const client = new MongoClient(uri, options);
-const clientPromise: Promise<MongoClient> = client.connect();
+let client;
+let clientPromise: Promise<MongoClient>;
+
+if (process.env.NODE_ENV === 'development') {
+  let globalWithMongo = global as typeof globalThis & {
+    _mongoClientPromise?: Promise<MongoClient>;
+  };
+
+  if (!globalWithMongo._mongoClientPromise) {
+    client = new MongoClient(uri, options);
+    globalWithMongo._mongoClientPromise = client.connect();
+  }
+  console.log('development');
+  clientPromise = globalWithMongo._mongoClientPromise;
+} else {
+  client = new MongoClient(uri, options);
+  clientPromise = client.connect();
+}
 
 async function connectDb(): Promise<Db> {
   try {
@@ -44,13 +60,27 @@ export async function getTickets(userId?: any): Promise<any> {
   return await getDocuments('tickets', userId);
 }
 
-export async function claimTickets(userId?: any): Promise<any> {
+export async function claimTickets(userId: any): Promise<any> {
   const db: Db = await connectDb();
-  const res = await db.collection('tickets').findOneAndUpdate(
-    { userId: { $in: [userId, DEFAULT_USER_ID] } },
-    [{ $set: { amount: { $sum: ['$amount', '$availToClaim'] } } }], // $subtract
-    { returnDocument: 'after', projection: { _id: 0 } },
-  );
+  const res = await db
+    .collection('tickets')
+    .findOneAndUpdate(
+      { userId: { $in: [userId, DEFAULT_USER_ID] } },
+      [{ $set: { amount: { $sum: ['$amount', '$availToClaim'] } } }],
+      { returnDocument: 'after', projection: { _id: 0 } },
+    );
+  return res.value;
+}
+
+export async function consumeTickets(userId: any, amount: number): Promise<any> {
+  const db: Db = await connectDb();
+  const res = await db
+    .collection('tickets')
+    .findOneAndUpdate(
+      { userId: { $in: [userId, DEFAULT_USER_ID] } },
+      [{ $set: { amount: { $subtract: ['$amount', amount] } } }],
+      { returnDocument: 'after', projection: { _id: 0 } },
+    );
   return res.value;
 }
 
@@ -78,9 +108,7 @@ export async function exploreCards(userId: string, exploreAmount: number, pass: 
       projection: { _id: 0 },
     });
 
-  console.log(res.value);
-
-  return res.value;
+  return [cards, res.value];
 }
 
 export default clientPromise;

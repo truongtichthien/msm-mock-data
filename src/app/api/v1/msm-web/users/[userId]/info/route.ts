@@ -5,7 +5,8 @@ import type { UsersCollectionProps } from '@msm/types';
 
 export async function GET(request: NextRequest, options: any) {
   const { userId } = options.params;
-  const entity: UsersCollectionProps = await getUsers(userId);
+  const entity = await getUsers(userId);
+  console.log(entity);
   return NextResponse.json(entity);
 }
 
