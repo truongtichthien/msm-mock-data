@@ -9,20 +9,23 @@ const path = require('path');
 const app = express();
 
 // define root directory for resources
-app.use(cors({ origin: '*', credentials: true }));
+app.use(cors({ origin: ['http://local.iskra.world:3000', '192.168.0.113:3000'], credentials: true }));
+app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cookieParser());
 
 app.use('/api/v1/msm-web/users/:id/info', function (req, res) {
   const paramId = req.params.id;
-  fs.readFile(path.join(__dirname, '/src/app/db/users/info.json'), 'utf8', (err, data) => {
+  console.log('cookies', JSON.stringify(req.cookies.username));
+  console.log('cookies', JSON.stringify(req.cookies));
+
+  fs.readFile(path.join(__dirname, '/src/db/users/info.json'), 'utf8', (err, data) => {
     if (err) {
       res.status(401).json({ userId: paramId, execution: false });
       return;
     }
-    const usersInfo = JSON.parse(data);
-    const info = usersInfo[paramId] || usersInfo['default'];
+    const dbResponse = JSON.parse(data);
+    const entity = dbResponse[paramId] || dbResponse['default'];
     res.json(info);
   });
 });
@@ -30,13 +33,13 @@ app.use('/api/v1/msm-web/users/:id/info', function (req, res) {
 app.use('/api/v1/msm-web/users/:id/balance', function (req, res) {
   const paramId = req.params.id;
   const queryFor = req.query.for;
-  fs.readFile(path.join(__dirname, `/src/app/db/users/balance/${queryFor}.json`), 'utf8', (err, data) => {
+  fs.readFile(path.join(__dirname, `/src/db/users/balance/${queryFor}.json`), 'utf8', (err, data) => {
     if (err) {
       res.status(401).json({ userId: paramId, execution: false });
       return;
     }
-    const usersInfo = JSON.parse(data);
-    const info = usersInfo[paramId] || usersInfo['default'];
+    const dbResponse = JSON.parse(data);
+    const entity = dbResponse[paramId] || dbResponse['default'];
     res.json(info);
   });
 });

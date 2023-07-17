@@ -4,7 +4,7 @@ import fsPromises from 'fs/promises';
 import path from 'path';
 
 function dataFilePath(page: string) {
-  return path.join(process.cwd(), `src/app/db/users/balance/${page}.json`);
+  return path.join(process.cwd(), `src/db/combine/${page}.json`);
 }
 
 async function getUsersBalance(page: string) {
