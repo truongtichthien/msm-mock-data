@@ -1,26 +1,7 @@
-export type UserProps = {
+import type { WithId, Document, ObjectId } from 'mongodb';
+
+export type UsersCollectionProps = {
   [key in '_id' | 'userId' | 'name' | 'email' | 'iskraTier' | 'wallet']: string;
-};
-
-export type SbtDatabaseProps = { [key: string]: number };
-export type SbtResponseProps = { sbt: number };
-
-export type TicketProps = { [key in 'amount' | 'claimable']: number };
-
-export type TicketDatabaseProps = { [key: string]: TicketProps };
-
-export type ExplorationTicketProps = {
-  explorationTicket: {
-    [key in 'amount' | 'availToClaim']: number;
-  };
-};
-
-export type GeneralResponseProps = {
-  oper: string;
-  isSuccess: boolean;
-  msg: string | null;
-  code?: string;
-  data: ExplorationTicketProps | null;
 };
 
 export type CardProps = {
@@ -45,7 +26,35 @@ export type CardProps = {
   traits: Array<string>;
 };
 
+export interface CardsCollectionProps extends WithId<Document> {
+  userId: string;
+  cards: Array<Array<Array<CardProps>>>;
+}
+
 export type CardsLevelProps = Array<Array<Array<CardProps>>>;
+
+// ~~~
+
+export type SbtDatabaseProps = { [key: string]: number };
+export type SbtResponseProps = { sbt: number };
+
+export type TicketProps = { [key in 'amount' | 'claimable']: number };
+
+export type TicketDatabaseProps = { [key: string]: TicketProps };
+
+export type ExplorationTicketProps = {
+  explorationTicket: {
+    [key in 'amount' | 'availToClaim']: number;
+  };
+};
+
+export type GeneralResponseProps = {
+  oper: string;
+  isSuccess: boolean;
+  msg: string | null;
+  code?: string;
+  data: ExplorationTicketProps | null;
+};
 
 export type CardsDatabaseProps = { [key: string]: CardsLevelProps };
 

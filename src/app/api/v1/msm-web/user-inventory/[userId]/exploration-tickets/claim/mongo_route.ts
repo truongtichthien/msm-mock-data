@@ -2,9 +2,9 @@ import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import type { ExplorationTicketProps, GeneralResponseProps } from '@msm/types';
 import { randomInt } from '@msm/utils';
-import { claimTickets } from '@msm/factory/tickets';
+import { claimTickets } from '@msm/mongodb';
 
-export function POST(request: NextRequest, options: any) {
+export async function POST(request: NextRequest, options: any) {
   let data: null | ExplorationTicketProps = null;
   let msg: null | string = 'No available Exploration Tickets to claim';
 
@@ -12,7 +12,7 @@ export function POST(request: NextRequest, options: any) {
 
   if (isSuccess) {
     const { userId } = options.params;
-    const { amount } = claimTickets(userId);
+    const { amount } = await claimTickets(userId);
     msg = null;
     data = { explorationTicket: { amount, availToClaim: 0 } };
   }

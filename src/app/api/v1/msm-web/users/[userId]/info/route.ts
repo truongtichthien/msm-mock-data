@@ -1,11 +1,11 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import { getUsers } from '@msm/mongodb';
-import type { UserProps } from '@msm/types';
+import type { UsersCollectionProps } from '@msm/types';
 
 export async function GET(request: NextRequest, options: any) {
   const { userId } = options.params;
-  const entity: UserProps = await getUsers(userId);
+  const entity: UsersCollectionProps = await getUsers(userId);
   return NextResponse.json(entity);
 }
 

@@ -1,6 +1,13 @@
 import fsPromises from 'fs/promises';
 import path from 'path';
-import type { TicketProps, ExplorationTicketProps, TicketDatabaseProps, GeneralResponseProps } from '@msm/types';
+import type {
+  CardProps,
+  TicketProps,
+  ExplorationTicketProps,
+  TicketDatabaseProps,
+  GeneralResponseProps,
+} from '@msm/types';
+import { COLORS_NAME } from './constants';
 
 export async function readDb<T>(fileName: string): Promise<T> {
   const dataFilePath = path.join(process.cwd(), `src/db/${fileName}.json`);
@@ -25,4 +32,29 @@ export async function writeTickets(userId: string, newAmount: number): Promise<T
   const updated: TicketDatabaseProps = { ...dbResponse, [existUserId]: { amount: newAmount, claimable } };
   const newRes: TicketDatabaseProps = await writeDb<TicketDatabaseProps>('tickets', updated);
   return newRes;
+}
+
+export function generateCard(): CardProps {
+  const colorCode: number = randomInt(0, 9);
+  return {
+    id: randomInt(1234, 4567),
+    level: randomInt(0, 3),
+    color: {
+      code: colorCode,
+      label: COLORS_NAME[colorCode],
+    },
+    strength: {
+      max: 10,
+      value: randomInt(5, 10),
+    },
+    attack: {
+      max: 10,
+      value: randomInt(5, 10),
+    },
+    defense: {
+      max: 10,
+      value: randomInt(5, 10),
+    },
+    traits: ['Sword', 'Fly'],
+  };
 }

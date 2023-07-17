@@ -1,6 +1,8 @@
 import type { Db } from 'mongodb';
 import { MongoClient, Int32 } from 'mongodb';
 import { DEFAULT_USER_ID } from './constants';
+import type { CardsCollectionProps, CardsLevelProps, CardProps } from './types';
+import { generateCard } from './utils';
 
 if (!process.env.MONGODB_URI) {
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
@@ -49,6 +51,35 @@ export async function claimTickets(userId?: any): Promise<any> {
     [{ $set: { amount: { $sum: ['$amount', '$availToClaim'] } } }], // $subtract
     { returnDocument: 'after', projection: { _id: 0 } },
   );
+  return res.value;
+}
+
+export async function exploreCards(userId: string, exploreAmount: number, pass: boolean) {
+  const db: Db = await connectDb();
+  const { cards }: CardsCollectionProps = (await db.collection('cards').findOne()) as CardsCollectionProps;
+
+  // create cards
+  const newCards: Array<CardProps> = Array(pass ? exploreAmount : 1)
+    .fill(0)
+    .map(() => generateCard());
+
+  newCards.forEach((card: CardProps) => {
+    const {
+      level,
+      color: { code },
+    } = card;
+    cards[level][code].push(card);
+  });
+
+  const res = await db
+    .collection('cards')
+    .findOneAndUpdate({ userId: { $in: [userId, DEFAULT_USER_ID] } }, [{ $set: { cards } }], {
+      returnDocument: 'after',
+      projection: { _id: 0 },
+    });
+
+  console.log(res.value);
+
   return res.value;
 }
 
