@@ -25,7 +25,7 @@ async function connectDb(): Promise<Db> {
 
 async function getDocuments(collection: string, userId?: string): Promise<any> {
   const db: Db = await connectDb();
-  return db
+  return await db
     .collection(collection)
     .findOne(userId ? { userId: { $in: [userId, DEFAULT_USER_ID] } } : {}, { projection: { _id: 0 } });
 }
@@ -44,14 +44,12 @@ export async function getTickets(userId?: any): Promise<any> {
 
 export async function claimTickets(userId?: any): Promise<any> {
   const db: Db = await connectDb();
-  return db.collection('tickets').findOneAndUpdate(
+  const res = await db.collection('tickets').findOneAndUpdate(
     { userId: { $in: [userId, DEFAULT_USER_ID] } },
     [{ $set: { amount: { $sum: ['$amount', '$availToClaim'] } } }], // $subtract
-    {
-      returnDocument: 'after',
-      projection: { _id: 0 },
-    },
+    { returnDocument: 'after', projection: { _id: 0 } },
   );
+  return res.value;
 }
 
 export default clientPromise;
