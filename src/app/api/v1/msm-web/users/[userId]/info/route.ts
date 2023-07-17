@@ -1,20 +1,11 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
-import fsPromises from 'fs/promises';
-import path from 'path';
-
-const dataFilePath = path.join(process.cwd(), 'src/db/info.json');
-
-async function readDb() {
-  const res = await fsPromises.readFile(dataFilePath, 'utf-8');
-  return JSON.parse(res);
-}
+import { getUsers } from '@msm/mongodb';
+import type { UserProps } from '@msm/types';
 
 export async function GET(request: NextRequest, options: any) {
-  const dbResponse = await readDb();
-  // console.log(options);
   const { userId } = options.params;
-  const entity = dbResponse[userId] ?? dbResponse['default'];
+  const entity: UserProps = await getUsers(userId);
   return NextResponse.json(entity);
 }
 

@@ -1,3 +1,7 @@
+export type UserProps = {
+  [key in '_id' | 'userId' | 'name' | 'email' | 'iskraTier' | 'wallet']: string;
+};
+
 export type SbtDatabaseProps = { [key: string]: number };
 export type SbtResponseProps = { sbt: number };
 
