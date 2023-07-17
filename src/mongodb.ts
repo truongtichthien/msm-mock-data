@@ -44,16 +44,14 @@ export async function getTickets(userId?: any): Promise<any> {
 
 export async function claimTickets(userId?: any): Promise<any> {
   const db: Db = await connectDb();
-  return db
-    .collection('tickets')
-    .findOneAndUpdate(
-      { userId: { $in: [userId, DEFAULT_USER_ID] } },
-      [{ $set: { amount: { $subtract: ['$amount', '$availToClaim'] } } }],
-      {
-        returnDocument: 'after',
-        projection: { _id: 0 },
-      },
-    );
+  return db.collection('tickets').findOneAndUpdate(
+    { userId: { $in: [userId, DEFAULT_USER_ID] } },
+    [{ $set: { amount: { $sum: ['$amount', '$availToClaim'] } } }], // $subtract
+    {
+      returnDocument: 'after',
+      projection: { _id: 0 },
+    },
+  );
 }
 
 export default clientPromise;
