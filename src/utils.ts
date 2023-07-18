@@ -25,6 +25,12 @@ export function randomInt(min: number = 0, max: number): number {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+export function sleep(time: number) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, time);
+  });
+}
+
 export async function writeTickets(userId: string, newAmount: number): Promise<TicketDatabaseProps> {
   const dbResponse: TicketDatabaseProps = await readDb<TicketDatabaseProps>('tickets');
   const existUserId: string = !!dbResponse[userId] ? userId : 'default';

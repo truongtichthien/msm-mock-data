@@ -10,7 +10,7 @@ export const COLORS_NAME = [
   'tiffany',
   'skyblue',
   'blue',
-  'purpil',
+  'purple',
   'silver',
   'black',
 ];
