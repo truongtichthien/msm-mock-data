@@ -11,7 +11,8 @@ const nextConfig = {
           { key: 'Access-Control-Allow-Methods', value: 'GET, DELETE, PATCH, POST, PUT, OPTIONS' },
           {
             key: 'Access-Control-Allow-Headers',
-            value: 'Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Iskra-App-Id', // add cusomt X- Headers also
+            value:
+              'Authorization, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Iskra-App-Id', // add cusomt X- Headers also
           },
         ],
       },
