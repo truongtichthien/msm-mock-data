@@ -35,3 +35,9 @@ export async function POST(request: NextRequest, options: any) {
 
   return NextResponse.json(res);
 }
+
+export async function OPTIONS() {
+  // it is a must implementation to serve CORS APIs
+  // return the null response
+  return NextResponse.json(null);
+}

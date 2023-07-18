@@ -19,3 +19,9 @@ export async function POST(request: NextRequest, options: any) {
 
   return NextResponse.json({ oper: 'EXPLORATION_TICKET_CLAIMING', isSuccess, msg, data } as GeneralResponseProps);
 }
+
+export async function OPTIONS() {
+  // it is a must implementation to serve CORS APIs
+  // return the null response
+  return NextResponse.json(null);
+}
