@@ -48,17 +48,47 @@ async function getDocuments(collection: string, userId?: string): Promise<any> {
     .findOne(userId ? { userId: { $in: [userId, DEFAULT_USER_ID] } } : {}, { projection: { _id: 0 } });
 }
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// GET
+// ~~~
+// ~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 export async function getUsers(userId?: string): Promise<any> {
   return await getDocuments('users', userId);
 }
 
-export async function getCards(userId?: any): Promise<any> {
-  return await getDocuments('cards', userId);
+export async function getCards(userId?: any): Promise<Array<Array<number>>> {
+  const dbCards: CardsCollectionProps = await getDocuments('cards', userId);
+  const { cards } = dbCards;
+  return cards.map((lvl) => lvl.map((clr) => clr.length));
 }
 
 export async function getTickets(userId?: any): Promise<any> {
   return await getDocuments('tickets', userId);
 }
+
+export async function getIsk(userId?: string): Promise<any> {
+  return await getDocuments('isk', userId);
+}
+
+export async function getSbg(userId?: string): Promise<any> {
+  return await getDocuments('sbg', userId);
+}
+
+export async function getSbt(userId?: string): Promise<any> {
+  return await getDocuments('sbt', userId);
+}
+
+export async function getPass(userId?: string): Promise<any> {
+  return await getDocuments('passes', userId);
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// POST
+// ~~~~
+// ~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 export async function claimTickets(userId: any): Promise<any> {
   const db: Db = await connectDb();
