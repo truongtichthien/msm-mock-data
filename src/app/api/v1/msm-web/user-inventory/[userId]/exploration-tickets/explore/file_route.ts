@@ -7,34 +7,9 @@ import type {
   ExploredCardsResponseProps,
   GeneralResponseProps,
 } from '@msm/types';
-import { readDb, writeDb, randomInt, writeTickets } from '@msm/utils';
-import { COLORS_NAME } from '@msm/constants';
+import { readDb, writeDb, randomInt, writeTickets, generateCard } from '@msm/utils';
 import { getTicket } from '../claim/file_route';
-
-function generateCard(): CardProps {
-  const colorCode: number = randomInt(0, 9);
-  return {
-    id: randomInt(1234, 4567),
-    level: randomInt(0, 3),
-    color: {
-      code: colorCode,
-      label: COLORS_NAME[colorCode],
-    },
-    strength: {
-      max: 10,
-      value: randomInt(5, 10),
-    },
-    attack: {
-      max: 10,
-      value: randomInt(5, 10),
-    },
-    defense: {
-      max: 10,
-      value: randomInt(5, 10),
-    },
-    traits: ['Sword', 'Fly'],
-  };
-}
+import { COLORS_NAME } from '@msm/constants';
 
 export async function GET(request: NextRequest, options: any) {}
 
@@ -54,11 +29,9 @@ export async function POST(request: NextRequest, options: any) {
       .map(() => generateCard());
 
     newCards.forEach((card: CardProps) => {
-      const {
-        level,
-        color: { code },
-      } = card;
-      cards[level][code].push(card);
+      const { level, color } = card;
+      const colorIdx = COLORS_NAME.findIndex((e) => e === color);
+      cards[level][colorIdx].push(card);
     });
     const updated = { ...dbResponse, [existUserId]: cards };
     await writeDb('cards', updated);
