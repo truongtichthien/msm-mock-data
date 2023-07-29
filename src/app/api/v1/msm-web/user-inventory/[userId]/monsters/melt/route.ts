@@ -1,14 +1,9 @@
 import type { WithId, Document } from 'mongodb';
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
-import type { CardProps, MergedCardsReponse, GeneralResponseProps } from '@msm/types';
+import type { CardProps, MergedCardsReponse, GeneralResponseProps, CardsCollectionProps } from '@msm/types';
 import { randomInt, sleep } from '@msm/utils';
 import { mergeCards } from '@msm/mongodb';
-
-export interface CardsCollectionProps extends WithId<Document> {
-  userId: string;
-  cards: Array<Array<Array<CardProps>>>;
-}
 
 export async function POST(request: NextRequest, options: any) {
   let data: null | MergedCardsReponse = null;
