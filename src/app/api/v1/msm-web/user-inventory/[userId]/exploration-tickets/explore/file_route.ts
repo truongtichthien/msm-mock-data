@@ -4,7 +4,7 @@ import type {
   CardProps,
   CardsLevelProps,
   CardsDatabaseProps,
-  CardsResponseProps,
+  ExploredCardsResponseProps,
   GeneralResponseProps,
 } from '@msm/types';
 import { readDb, writeDb, randomInt, writeTickets } from '@msm/utils';
@@ -41,7 +41,7 @@ export async function GET(request: NextRequest, options: any) {}
 export async function POST(request: NextRequest, options: any) {
   const { amount, applyPass }: { amount: number; applyPass: boolean } = await request.json();
   const isSuccess: boolean = !!randomInt(0, 1);
-  let data: null | CardsResponseProps = null;
+  let data: null | ExploredCardsResponseProps = null;
   let msg: null | string = 'No available Exploration Tickets to claim';
   if (isSuccess) {
     const dbResponse: CardsDatabaseProps = await readDb('cards');

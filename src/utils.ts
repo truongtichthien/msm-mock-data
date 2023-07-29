@@ -45,10 +45,11 @@ export function generateCard(grade?: number): CardProps {
   return {
     id: randomInt(1234, 4567),
     level: grade || randomInt(0, 3),
-    color: {
-      code: colorCode,
-      label: COLORS_NAME[colorCode],
-    },
+    color: COLORS_NAME[colorCode],
+    // {
+    //   code: colorCode,
+    //   label: COLORS_NAME[colorCode],
+    // },
     strength: {
       max: 10,
       value: randomInt(5, 10),

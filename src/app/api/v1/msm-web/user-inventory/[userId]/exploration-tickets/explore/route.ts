@@ -1,7 +1,7 @@
 import type { WithId, Document } from 'mongodb';
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
-import type { CardProps, CardsResponseProps, GeneralResponseProps } from '@msm/types';
+import type { CardProps, ExploredCardsResponseProps, GeneralResponseProps } from '@msm/types';
 import { randomInt } from '@msm/utils';
 import { exploreCards, consumeTickets } from '@msm/mongodb';
 
@@ -11,7 +11,7 @@ export interface CardsCollectionProps extends WithId<Document> {
 }
 
 export async function POST(request: NextRequest, options: any) {
-  let data: null | CardsResponseProps = null;
+  let data: null | ExploredCardsResponseProps = null;
   let msg: null | string = 'No available Exploration Tickets to claim';
 
   const { amount, applyPass }: { amount: number; applyPass: boolean } = await request.json();

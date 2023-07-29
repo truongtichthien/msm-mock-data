@@ -5,7 +5,6 @@ import { getUsers } from '@msm/mongodb';
 export async function GET(request: NextRequest, options: any) {
   const { userId } = options.params;
   const entity = await getUsers(userId);
-  console.log(entity);
   return NextResponse.json(entity);
 }
 

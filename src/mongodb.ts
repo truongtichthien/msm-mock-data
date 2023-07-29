@@ -1,7 +1,7 @@
-import type { Db } from 'mongodb';
+import type { Db, WithId, Document } from 'mongodb';
 import { MongoClient } from 'mongodb';
-import { DEFAULT_USER_ID } from './constants';
-import type { CardsCollectionProps, CardProps } from './types';
+import { COLORS_NAME, DEFAULT_USER_ID, GRADE_COUNT } from './constants';
+import type { CardsCollectionProps, CardProps, AbilityProps } from './types';
 import { generateCard } from './utils';
 
 if (!process.env.MONGODB_URI) {
@@ -94,11 +94,9 @@ export async function exploreCards(userId: string, exploreAmount: number, pass: 
     .map(() => generateCard());
 
   newCards.forEach((card: CardProps) => {
-    const {
-      level,
-      color: { code },
-    } = card;
-    cards[level][code].push(card);
+    const { level, color } = card;
+    const colorIdx = COLORS_NAME.findIndex((e) => e === color);
+    cards[level][colorIdx].push(card);
   });
 
   const res = await db
@@ -111,34 +109,62 @@ export async function exploreCards(userId: string, exploreAmount: number, pass: 
   return [newCards, res.value];
 }
 
-export async function mergeCards(userId: string, grade: number) {
+export async function checkMerge(userId: string, grade: number): Promise<boolean> {
+  grade--;
   const db: Db = await connectDb();
-  const { cards }: CardsCollectionProps = (await db.collection('cards').findOne()) as CardsCollectionProps;
+  const { cards }: CardsCollectionProps = (await db
+    .collection('cards')
+    .findOne({ userId: { $in: [userId, DEFAULT_USER_ID] } })) as CardsCollectionProps;
+
+  return cards.reduce((a, e) => (e.length > 0 ? a + 1 : a), 0) === GRADE_COUNT;
+}
+
+export async function mergeCards(userId: string, grade: number) {
+  grade--;
+  const db: Db = await connectDb();
+  const { cards }: CardsCollectionProps = (await db
+    .collection('cards')
+    .findOne({ userId: { $in: [userId, DEFAULT_USER_ID] } })) as CardsCollectionProps;
+
+  // count how many cards can be merged
+  const colorCount = cards.map((e) => e.length).sort()[0];
 
   // create merged card
-  const mergedCard: CardProps = generateCard(grade + 1);
-  const {
-    level,
-    color: { code },
-  } = mergedCard;
-
-  // remove merging cards
-  cards[grade] = cards[grade].map((color) => {
-    color.shift();
-    return color;
-  });
-
-  // add merged card
-  cards[level][code].push(mergedCard);
-
-  const res = await db
-    .collection('cards')
-    .findOneAndUpdate({ userId: { $in: [userId, DEFAULT_USER_ID] } }, [{ $set: { cards } }], {
-      returnDocument: 'after',
-      projection: { _id: 0 },
+  const mergedCard: Array<CardProps> = Array(colorCount)
+    .fill(0)
+    .map(() => generateCard(grade + 1))
+    .sort((a: CardProps, b: CardProps) => {
+      const aAbility = ['strength', 'attack', 'defense'].map((k) => a[k as AbilityProps].value).join('');
+      const bAbility = ['strength', 'attack', 'defense'].map((k) => b[k as AbilityProps].value).join('');
+      return +aAbility - +bAbility;
     });
 
-  return [mergedCard, res.value];
+  const res: Array<Promise<WithId<Document> | null>> = mergedCard
+    .map(async (merged) => {
+      const { level, color } = merged;
+      const colorIdx = COLORS_NAME.findIndex((e) => e === color);
+
+      // remove merging cards
+      cards[grade] = cards[grade].map((color) => {
+        color.shift();
+        return color;
+      });
+
+      // add merged card
+      cards[level][colorIdx].push(merged);
+
+      const res = await db
+        .collection('cards')
+        .findOneAndUpdate({ userId: { $in: [userId, DEFAULT_USER_ID] } }, [{ $set: { cards } }], {
+          returnDocument: 'after',
+          projection: { _id: 0 },
+        });
+
+      return res.value as CardsCollectionProps;
+    })
+    .reverse();
+
+  return [mergedCard, res[0]];
 }
 
 export default clientPromise;

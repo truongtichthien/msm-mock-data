@@ -4,13 +4,16 @@ export type UsersCollectionProps = {
   [key in '_id' | 'userId' | 'name' | 'email' | 'iskraTier' | 'wallet']: string;
 };
 
+export type AbilityProps = 'strength' | 'attack' | 'defense';
+
 export type CardProps = {
   id: number;
   level: number;
-  color: {
-    code: number;
-    label: string;
-  };
+  color: string;
+  // {
+  //   code: number;
+  //   label: string;
+  // };
   strength: {
     max: number;
     value: number;
@@ -53,12 +56,12 @@ export type GeneralResponseProps = {
   isSuccess: boolean;
   msg: string | null;
   code?: string;
-  data: ExplorationTicketProps | CardsResponseProps | { card: CardProps } | null;
+  data: ExplorationTicketProps | ExploredCardsResponseProps | MergedCardsReponse | null;
 };
 
 export type CardsDatabaseProps = { [key: string]: CardsLevelProps };
 
-export type CardsResponseProps = {
+export type ExploredCardsResponseProps = {
   result?: {
     exploredAmount: number;
     unExploredAmount: number;
@@ -72,4 +75,9 @@ export type CardsResponseProps = {
         exploredItems: Array<CardProps>;
       }
     | CardProps;
+};
+
+export type MergedCardsReponse = {
+  merged: Array<CardProps>;
+  card: Array<Array<number>>;
 };
