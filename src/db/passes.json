@@ -1,10 +1,10 @@
 [
   {
     "userId": "1357284c-671e-44c6-9b24-c19697729a70",
-    "passUntil": "Fri, 24 Aug 2023 12:02:45 GMT"
+    "until": "1692878565000"
   },
   {
     "userId": "68c7327f-f6c2-4a9c-9e6d-e636109c702d",
-    "passUntil": "Fri, 24 Aug 2023 12:02:45 GMT"
+    "until": "1692878565000"
   }
 ]

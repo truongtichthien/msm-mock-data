@@ -2,6 +2,7 @@ import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import fsPromises from 'fs/promises';
 import path from 'path';
+import { DEFAULT_USER_ID } from '@msm/constants';
 
 function dataFilePath(page: string) {
   return path.join(process.cwd(), `src/db/combine/${page}.json`);
@@ -40,6 +41,12 @@ export async function GET(request: NextRequest, { params }: any) {
       break;
   }
 
-  const balance = usersBalance[userId] ?? usersBalance['default'];
+  const balance = usersBalance[userId] ?? usersBalance[DEFAULT_USER_ID];
   return NextResponse.json(balance, { status: 200 });
+}
+
+export async function OPTIONS() {
+  // it is a must implementation to serve CORS APIs
+  // return the null response
+  return NextResponse.json(null);
 }
