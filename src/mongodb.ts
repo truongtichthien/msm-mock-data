@@ -80,6 +80,10 @@ export async function getSbt(userId?: string): Promise<any> {
   return await getDocuments('sbt', userId);
 }
 
+export async function getCrystal(userId?: string): Promise<any> {
+  return await getDocuments('crystal', userId);
+}
+
 export async function getPass(userId?: string): Promise<any> {
   return await getDocuments('passes', userId);
 }
